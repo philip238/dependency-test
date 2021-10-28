@@ -1,0 +1,41 @@
+version: 2
+registries:
+  python-mpb:
+    type: python-index
+    url: https://pypi.mpb.com/
+    replaces-base: true
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  registries: "*"
+  insecure-external-code-execution: allow
+  schedule:
+    interval: daily
+    time: "23:59"
+  open-pull-requests-limit: 99
+  reviewers:
+  - philip238
+  labels:
+  - merge
+  - dependencies
+  rebase-strategy: auto
+- package-ecosystem: gitsubmodule
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "23:59"
+  open-pull-requests-limit: 99
+  reviewers:
+  - philip238
+  labels:
+  - dependencies
+  - submodules
+  - merge
+  rebase-strategy: disabled
+- package-ecosystem: docker
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "23:59"
+  open-pull-requests-limit: 99
+  rebase-strategy: auto
