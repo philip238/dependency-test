@@ -4,12 +4,50 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-black = "*"
+djangorestframework = "*"
+django-cors-headers = "*"
+django-prometheus = "*"
+django-log-request-id = "*"
+entrypoints = "*"
+grpcio-tools = "*"
+grpcio = "*"
+grpcio-health-checking = "*"
+mypy-protobuf = "*"
+mypy = "*"
+pip = "*"
+pipenv = "*"
+uritemplate = "*"
+wcwidth = "*"
+django = "*"
+pyyaml = "*"
+
+# Build
+twine = "*"
+jeepney = "*"
+secretstorage = "*"
+
+# Production
+uwsgi = "*"
 
 [dev-packages]
+autopep8 = "*"
+black = "*"
+coverage = "*"
+flake8-commas = "*"
+flake8-isort = "*"
+flake8-quotes = "*"
+isort = "*"
+known-side-effects = "*"
+model-mommy = "*"
+more-itertools = "*"
+parameterized = "*"
+pytest-django = "*"
+pytest = "*"
+types-protobuf = "*"
+types-requests = "*"
 
 [requires]
-python_version = "3.10"
+python_version = "3.9"
 
 [pipenv]
 allow_prereleases = true
