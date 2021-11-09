@@ -12,7 +12,7 @@ updates:
   schedule:
     interval: daily
     time: "23:59"
-  open-pull-requests-limit: 99
+  open-pull-requests-limit: 0
   reviewers:
   - philip238
   labels:
@@ -24,7 +24,7 @@ updates:
   schedule:
     interval: daily
     time: "23:59"
-  open-pull-requests-limit: 99
+  open-pull-requests-limit: 0
   reviewers:
   - philip238
   labels:
@@ -37,5 +37,5 @@ updates:
   schedule:
     interval: daily
     time: "23:59"
-  open-pull-requests-limit: 99
+  open-pull-requests-limit: 0
   rebase-strategy: auto
